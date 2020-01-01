@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Antrenman"></activity>
+        <activity android:name=".ArkadaslarinaOner"></activity>
+        <activity android:name=".Antrenman" />
         <activity android:name=".Ayarlar" />
         <activity android:name=".Programlar" />
         <activity android:name=".MainActivity" />
