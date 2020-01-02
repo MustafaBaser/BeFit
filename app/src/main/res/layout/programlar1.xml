@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/programlar_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birinci Gün"
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Squat - 5x5"
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bench Press - 5x5"
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ağırlıklı Barfiks - 5x5"
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="25sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/programlar_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programın Detayları"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="32sp" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5×5 Açıklamaları"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Program haftada 3 gün, aralarda en az birer gün dinlenme ile uygulanmalı.
+5×5, 5 set 5 tekrar anlamına geliyor. 1×5 ise 1 set, 5 tekrar anlamına geliyor.
+Bu setler çalışma setleri, bunlardan önce normalden daha hafif ağırlıklarla 1-2 ısınma seti yapmalısınız.
+Setler arasında kendinizi hazır hissedene kadar (1 – 5 dakikaya kadar) dinlenebilirsiniz.
+Deadliftin sadece 1 set olması, sinir sistemini zorlayıcı bir egzersiz olmasından dolayıdır. 1 seti dahi efektiftir ve Deadliftin amaçlarını gerçekleştirir."
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Mümkün olduğu kadar programın öğrencisi olmaya çalışın. Ancak:
+
+Squat yapmanız mümkün değilse Leg Press,
+Bench Press yapmanız mümkün değilse Dambıl Press,
+Ağırlıklı Barfiks mümkün değilse Lat Pulldown,
+Ağırlıklı Dips mümkün değilse Close Grip Bench Press yapabilirsiniz."
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="20sp"/>
+
+</LinearLayout>
