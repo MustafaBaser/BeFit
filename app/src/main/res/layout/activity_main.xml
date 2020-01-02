@@ -1,30 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/drawer_layout"
-    android:fitsSystemWindows="true"
     android:background="@drawable/background"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity"
     tools:openDrawer="start">
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="172dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/button"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="208dp"
         android:background="@drawable/custom_button"
         android:fontFamily="sans-serif-light"
-        android:text=" Antrenman Programları"
-        android:onClick="programlar"
+        android:onClick="antrenman"
+        android:text="Antrenman"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="170dp"
+        android:layout_height="72dp"
+        android:layout_marginEnd="120dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="sans-serif-light"
+        android:onClick="programlar"
+        android:text=" Antrenman Programları"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.991"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -32,51 +48,31 @@
         android:id="@+id/button3"
         android:layout_width="88dp"
         android:layout_height="56dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="120dp"
         android:background="@drawable/custom_button"
         android:fontFamily="sans-serif-light"
-        android:text="Ayarlar"
         android:onClick="ayarlar"
+        android:text="Ayarlar"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="170dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="220dp"
-        android:background="@drawable/custom_button"
-        android:fontFamily="sans-serif-light"
-        android:text="Antrenman"
-        android:onClick="antrenman"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/button4"
-        android:layout_width="91dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="81dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="120dp"
         android:background="@drawable/custom_button"
         android:fontFamily="sans-serif-light"
         android:text="Paylaş"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
