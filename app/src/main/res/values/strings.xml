@@ -3,4 +3,44 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Bilgiler1">Bırakınca Sarkar mı? Kaybolur mu?
+Arkadaşlar bırakınca sarkmaz. Böyle bir şey yok.
+
+Kaslar büyür (hipertrofi) ve artık çalışmayı bırakırsanız atrofi olurlar. Küçülürler bir miktar, ama her zaman belli bir seviyede kaslarınız kalır. Tekrar ciddi antrenman yapmaya başladığınızda ise tekrar hızlıca büyürler.
+
+Mesela 3 sene bırakın, 3 ay döndüğünüzde direk eski iyi günlerinize geri dönersiniz.</string>
+
+    <string name="Bilgiler2">Cilt Lekeleri ve Yırtıklar
+Bu leke ve yırtıklar dermatolojinin derdidir, fitness antrenmanının değil. Bu durumda ne yazık ki yapabileceğimiz pek bir şey yok.
+
+Sebepleri nelerdir? Hızlı şekilde vücut ölçülerinin değişmesi. Örneğin hamile kadınlarda karında cilt yırtıkları ve lekeler oluşur. Fitness içinde de aynı şekilde.</string>
+
+    <string name="Bilgiler3">Kasların Ağrıması Gelişim Anlamına Mı Gelir?
+Bazen evet, bazen hayır. Buna güvenemezsiniz.
+
+Ağrılar alışık olunmayan çalışmalardan sonra oluşur. Mesela aylarca zorlanmadı kaslarınız, bir anda zorlanıyor, ciddi şekilde ağrır.
+
+Ama bu ağrılar düzenli antrenman yapınca artık kalmayacaktır. Bu yüzden kendinizi ağrısın illa diye zorlamanıza gerek yok. Geliştiğinizi değil, belki de yanlış program yaptığınızı gösterir.
+
+İyi bir programla birlikte yeni başlayanlarda bile birkaç hafta sonra hiç ağrı olmamalı.
+
+Sert antrenmandan sonra ağrıyorsa belki de verimsiz bir antrenman sıklığı izliyorsunuz, sadece kaslarınızı bilinçsizce zorluyorsunuz. Gereksiz stres yaratıyorsunuz. Bu onlardan yenilenip daha güçlü bir versiyona adapte olacağınız anlamına gelmiyor.
+
+O yüzden ağrıdan kaçın.</string>
+    
+    <string name="Bilgiler4">Göbek, Bel, Kalça Nasıl Erir, Hangi Hareketler?
+Hiçbir egzersiz kaslarınızın üzerindeki yağı eritmez. 500 tekrar mekiklere son verin.
+
+Yağ yakma başka bir iştir, kas geliştirme başka. Yağ yakma egzersizi diye bir şey yoktur. Vücut genel olarak yağ verir, bu yağlar gider. Bölgesel incelme diye bir şey yoktur.</string>
+
+
+    <string name="Bilgiler5">Fitness Hantallaştırır Mı?
+Fitness doğru yapıldığında, örneğin bizim programlarımızla yapıldığında, sizi hızlandırır. Asla yavaşlatmaz.
+
+Daha hızlı koşmak, daha iyi sıçramak, daha iyi yumruk atmak için ağırlık çalışmanız lazım.
+
+Ama makinelere oturup yalnızca şişeyim de nolursa olsun derseniz, aynen öyle olur. Doğru düzgün kas bile geliştiremezsiniz.</string>
+
+
 </resources>

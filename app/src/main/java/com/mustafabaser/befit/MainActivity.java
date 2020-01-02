@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
 
         String welcomeToast = "BeFit ile daha sağlıklı vücutlar!";
 
@@ -54,6 +54,11 @@ public class MainActivity extends AppCompatActivity {
     public void antrenman(View view) {
         Intent antrenmanActivity = new Intent(MainActivity.this, Antrenman.class);
         startActivity(antrenmanActivity);
+    }
+
+    public void bilgiler(View view) {
+        Intent bilgilerActivity = new Intent(MainActivity.this, Bilgiler.class);
+        startActivity(bilgilerActivity);
     }
 
 }

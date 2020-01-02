@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ArkadaslarinaOner"></activity>
+        <activity android:name=".Bilgiler"></activity>
+        <activity android:name=".ArkadaslarinaOner" />
         <activity android:name=".Antrenman" />
         <activity android:name=".Ayarlar" />
         <activity android:name=".Programlar" />
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
