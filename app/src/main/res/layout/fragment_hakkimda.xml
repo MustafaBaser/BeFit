@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HakkimdaFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="14sp"
+        android:text="Merhaba, ben Mustafa, Ağustos 1996'da dünyaya geldim. Çocuk yaştan beri süregelen ilgim üzerine, üniversiteyi tümüyle bu yönde okumak ve iş hayatımı bu yönde çizmek istedim. Yazılım Mühendisliği bölümüne dikey geçiş yapmadan önce, 2014 yılından itibaren 2 yıl Bilgisayar Programcılığı bölümünde okudum, daha sonra da hayalim olan Yazılım Mühendisliği bölümüne dikey geçiş yaptım. Daha önce .NET, Web Geliştirme ve Mobil Geliştirme üzerine uğraş verdim ve bu yönde kendimi geliştirdim. Son bir kaç yıldır ağırlıklı olarak Web ve Mobil Geliştirme üzerine uğraş vermekteyim. Bunun yanı sıra Unity ile mobil 3D sıra tabanlı kart oyunu projesi geliştirmekteyim, önümüzdeki yıl mayıs ayında yayınlayacağım. Bunların dışında, daha önce gönüllü olarak sosyal projelere destek verdim. Hem ekip çalışmasına yatkınlık kazanmak, hem de destek olmak adına bir eğitimde destek projesine gönüllü olarak destek veriyorum." />
+
+</FrameLayout>
