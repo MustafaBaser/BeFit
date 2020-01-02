@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 shareIntent = new Intent(Intent.ACTION_SEND);
-                shareIntent.setType("text/pain");
+                shareIntent.setType("text/plain");
                 shareIntent.putExtra(Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(shareIntent, "Şununla paylaş: "));
 
@@ -40,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void antrenman(View v) {
+        Intent antrenmanActivity = new Intent(MainActivity.this, Antrenman.class);
+        startActivity(antrenmanActivity);
+    }
 
     public void programlar(View view) {
         Intent programsActivity = new Intent(MainActivity.this, Programlar.class);
@@ -49,11 +53,6 @@ public class MainActivity extends AppCompatActivity {
     public void ayarlar(View view) {
         Intent ayarlarActivity = new Intent(MainActivity.this, Ayarlar.class);
         startActivity(ayarlarActivity);
-    }
-
-    public void antrenman(View view) {
-        Intent antrenmanActivity = new Intent(MainActivity.this, Antrenman.class);
-        startActivity(antrenmanActivity);
     }
 
     public void bilgiler(View view) {

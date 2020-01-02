@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Bilgiler"></activity>
         <activity android:name=".ArkadaslarinaOner" />
-        <activity android:name=".Antrenman" />
+        <activity android:name=".Antrenman"
+            android:theme="@style/Ayarlar"/>
         <activity android:name=".Ayarlar" />
         <activity android:name=".Programlar" />
         <activity
