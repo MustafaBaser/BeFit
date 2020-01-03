@@ -18,7 +18,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Ayarlar" parent="Theme.AppCompat">
+    <style name="Ayarlar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionBar">true</item>
         <item name="actionMenuTextColor">@color/colorWhiteGrey</item>
     </style>
