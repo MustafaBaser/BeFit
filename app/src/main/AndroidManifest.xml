@@ -2,26 +2,36 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mustafabaser.befit">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="BeFit - Stay Strong"
+        android:label="BeFit - Workout App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bilgiler"></activity>
+
+        <activity android:name=".ProfiliGuncelle" />
+        <activity android:name=".Bilgiler" />
         <activity android:name=".ArkadaslarinaOner" />
-        <activity android:name=".Antrenman"
-            android:theme="@style/Ayarlar"/>
         <activity android:name=".Ayarlar" />
         <activity android:name=".Programlar" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".Profil"
+            android:theme="@style/Ayarlar"/>
+
+        <activity
+            android:name=".Antrenman"
+            android:theme="@style/Ayarlar" />
+        <activity
             android:name=".SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />

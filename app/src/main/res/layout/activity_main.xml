@@ -57,8 +57,7 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
         android:id="@+id/button4"
@@ -68,6 +67,21 @@
         android:background="@drawable/custom_button"
         android:fontFamily="sans-serif-light"
         android:text="Paylaş"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="sans-serif-light"
+        android:text="Profil"
+        android:onClick="profil"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="20sp"

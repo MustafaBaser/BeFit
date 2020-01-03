@@ -34,8 +34,8 @@ public class Programlar extends AppCompatActivity {
         list.add(new PageFragment1());
         list.add(new PageFragment2());
         list.add(new PageFragment3());
-        list.add(new PageFragment4());
         list.add(new PageFragment5());
+        list.add(new PageFragment4());
 
         pager = findViewById(R.id.pager);
         pagerAdapter = new SliderPagerAdapter(getSupportFragmentManager(),list);

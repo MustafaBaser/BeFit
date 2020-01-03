@@ -28,7 +28,7 @@ Ama bu ağrılar düzenli antrenman yapınca artık kalmayacaktır. Bu yüzden k
 Sert antrenmandan sonra ağrıyorsa belki de verimsiz bir antrenman sıklığı izliyorsunuz, sadece kaslarınızı bilinçsizce zorluyorsunuz. Gereksiz stres yaratıyorsunuz. Bu onlardan yenilenip daha güçlü bir versiyona adapte olacağınız anlamına gelmiyor.
 
 O yüzden ağrıdan kaçın.</string>
-    
+
     <string name="Bilgiler4">Göbek, Bel, Kalça Nasıl Erir, Hangi Hareketler?
 Hiçbir egzersiz kaslarınızın üzerindeki yağı eritmez. 500 tekrar mekiklere son verin.
 
@@ -41,6 +41,9 @@ Fitness doğru yapıldığında, örneğin bizim programlarımızla yapıldığ�
 Daha hızlı koşmak, daha iyi sıçramak, daha iyi yumruk atmak için ağırlık çalışmanız lazım.
 
 Ama makinelere oturup yalnızca şişeyim de nolursa olsun derseniz, aynen öyle olur. Doğru düzgün kas bile geliştiremezsiniz.</string>
+    <string name="title_activity_antrenman2">Antrenman</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
 
 
 </resources>

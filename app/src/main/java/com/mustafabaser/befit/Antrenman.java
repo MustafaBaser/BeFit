@@ -14,7 +14,6 @@ public class Antrenman extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setTitle("Antrenmanlar");
-        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
     }
 
@@ -24,13 +23,12 @@ public class Antrenman extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
-        switch (item.getItemId()){
+        switch (item.getItemId()) {
 
-            case R.id.share_button:
+                case R.id.share_button:
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
                 String shareBody="Bu harika antrenman programını seninle paylaşıyorum: ";

@@ -60,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(bilgilerActivity);
     }
 
+    public void profil(View view) {
+        Intent profilActivity = new Intent(MainActivity.this, Profil.class);
+        startActivity(profilActivity);
+    }
+
+
 }
 
 

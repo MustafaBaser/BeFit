@@ -11,37 +11,37 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:text="Ama ben makinelerle çalışıyorum.. "
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="❝Ama ben makinelerle çalışıyorum...❞"
         android:textColor="@color/colorWhiteGrey"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
     <TextView
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:text="Spor salonu içinde nasıl bir ekipman kullandığınızdan bağımsız olarak, estetik vücut geliştirme ve kas yapmak için: itmeli, çekmeli, çömelmeli, eğilmeli ve doğru şekilde nefes almalıyız."
         android:textColor="@color/colorWhiteGrey"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="20dp"
         android:text="Bunları serbest ağırlıklarla yapmak daha riskli gibi görünebilir, ancak serbest ağırlıkların güzelliği şudur ki: eğer hatamız varsa, anında öğreniriz. Bir şeyler garip hissettirir."
         android:textColor="@color/colorWhiteGrey"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
+        android:layout_marginRight="18dp"
         android:text="Ancak bize bir şekilde sınırlar koyan makineleri tercih ettiğimizde hem bilimsel olarak daha az verim alırız, hem de yanlış bir güvenlik algısına kendimizi kaptırabiliriz.
 
 Dolayısıyla aslında çok basit olan, ancak hiçbir zaman üzerinde durmadığımız şeylerin bedelini er ya da geç ödemek zorunda kalırız.
@@ -50,6 +50,6 @@ Bu yüzden makine de kullansanız yukarıdaki videoların sıkı bir öğrencisi
 
 İnanın bana, oldukça kolay ve sağlıklı şekilde kas yapmak için dikkatinize değer!"
         android:textColor="@color/colorWhiteGrey"
-        android:textSize="20sp"/>
+        android:textSize="18sp"/>
 
 </LinearLayout>
