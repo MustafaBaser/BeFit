@@ -8,7 +8,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:screenOrientation="portrait"
     tools:context=".Bilgiler">
 
     <com.google.android.material.appbar.AppBarLayout

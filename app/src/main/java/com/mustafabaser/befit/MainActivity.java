@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void antrenman(View v) {
-        Intent antrenmanActivity = new Intent(MainActivity.this, Antrenman.class);
-        startActivity(antrenmanActivity);
+    public void antrenman(View view) {
+        Intent workoutActivity = new Intent(MainActivity.this, Workout.class);
+        startActivity(workoutActivity);
     }
 
     public void programlar(View view) {

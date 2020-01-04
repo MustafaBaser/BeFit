@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mustafabaser.befit">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".Workout"></activity>
         <activity android:name=".ProfiliGuncelle" />
         <activity android:name=".Bilgiler" />
         <activity android:name=".ArkadaslarinaOner" />
@@ -22,10 +22,6 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Profil"
-            android:theme="@style/Ayarlar"/>
-
-        <activity
-            android:name=".Antrenman"
             android:theme="@style/Ayarlar" />
         <activity
             android:name=".SplashActivity"

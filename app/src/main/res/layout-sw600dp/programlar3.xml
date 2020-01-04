@@ -5,14 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:screenOrientation="portrait"
-    android:background="@color/colorAccent">
+    android:background="@color/colorPrimary">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="İkinci Gün"
+        android:text="Üçüncü Gün"
         android:textColor="@color/colorWhiteGrey"
         android:textSize="32sp" />
 
@@ -27,15 +26,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Overhead Press - 5x5"
+        android:text="Bench Press - 5x5"
         android:textColor="@color/colorWhiteGrey"
         android:textSize="25sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dead Lift - 5x5"
+        android:text="Bentover Row - 5x5"
         android:textColor="@color/colorWhiteGrey"
         android:textSize="25sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Programın detayları ve kritik bilgiler için kaydırın -->"
+        android:textColor="@color/colorWhiteGrey"
+        android:textSize="18sp" />
 
 </LinearLayout>

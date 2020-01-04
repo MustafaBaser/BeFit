@@ -8,6 +8,7 @@
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
     tools:context=".MainActivity"
+    android:screenOrientation="portrait"
     tools:openDrawer="start">
 
     <Button
