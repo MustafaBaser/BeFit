@@ -50,11 +50,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(programsActivity);
     }
 
-    public void ayarlar(View view) {
-        Intent ayarlarActivity = new Intent(MainActivity.this, Ayarlar.class);
-        startActivity(ayarlarActivity);
-    }
-
     public void bilgiler(View view) {
         Intent bilgilerActivity = new Intent(MainActivity.this, Bilgiler.class);
         startActivity(bilgilerActivity);
@@ -65,7 +60,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(profilActivity);
     }
 
-
+    public void hakkimda(View view) {
+        Intent hakkimdaActivity = new Intent(MainActivity.this, Hakkimda.class);
+        startActivity(hakkimdaActivity);
+    }
 }
 
 

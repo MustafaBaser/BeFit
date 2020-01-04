@@ -7,6 +7,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.content.ContentValues;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -15,6 +16,7 @@ import android.database.sqlite.SQLiteStatement;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.ImageDecoder;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,6 +25,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -32,7 +35,7 @@ public class ProfiliGuncelle extends AppCompatActivity {
     Bitmap selectedImage;
     ImageView imageView;
     EditText name, age, gender, height, weight;
-    Button button;
+    Button saveButton, updateButton;
 
     SQLiteDatabase database;
 
@@ -47,7 +50,8 @@ public class ProfiliGuncelle extends AppCompatActivity {
         gender = findViewById(R.id.dbGender);
         height = findViewById(R.id.dbHeight);
         weight = findViewById(R.id.dbWeight);
-        button = findViewById(R.id.buttonSave);
+        saveButton = findViewById(R.id.buttonSave);
+        updateButton = findViewById(R.id.buttonUpdate);
 
         database = this.openOrCreateDatabase("KisiselBilgiler", MODE_PRIVATE, null);
 
@@ -62,11 +66,13 @@ public class ProfiliGuncelle extends AppCompatActivity {
             gender.setText("");
             height.setText("");
             weight.setText("");
-            button.setVisibility(View.VISIBLE);
+            saveButton.setVisibility(View.VISIBLE);
+            updateButton.setVisibility(View.INVISIBLE);
 
         }else{
             int personId = intent.getIntExtra("id", 1);
-            button.setVisibility(View.INVISIBLE);
+            saveButton.setVisibility(View.INVISIBLE);
+            updateButton.setVisibility(View.VISIBLE);
 
 
             try{
@@ -182,8 +188,51 @@ public class ProfiliGuncelle extends AppCompatActivity {
 
         Intent geriDon = new Intent(this, Profil.class);
         geriDon.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Toast.makeText(getApplicationContext(), "Veri başarıyla yüklendi!" , Toast.LENGTH_LONG).show();
         startActivity(geriDon);
     }
+
+    //----------------------------- dbGuncelle ------------------------------------
+
+    public void dbUpdate(View view) {
+
+        String dbName = name.getText().toString();
+        String dbAge = age.getText().toString();
+        String dbGender = gender.getText().toString();
+        String dbHeight = height.getText().toString();
+        String dbWeight = weight.getText().toString();
+
+        Bitmap smallImage = makeSmallerImage(selectedImage, 300);
+
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        smallImage.compress(Bitmap.CompressFormat.PNG, 50, outputStream);
+        byte[] byteArray = outputStream.toByteArray();
+
+        try {
+            database = this.openOrCreateDatabase("KisiselBilgiler", MODE_PRIVATE, null);
+            database.execSQL("CREATE TABLE IF NOT EXISTS kisiselbilgiler (id INTEGER PRIMARY KEY, name VARCHAR, age VARCHAR, gender VARCHAR, height VARCHAR, weight VARCHAR, image BLOB)");
+
+            String sqlString = "INSERT INTO kisiselbilgiler (name, age, gender, height, weight, image) VALUES (?, ?, ?, ?, ?, ?)";
+            SQLiteStatement sqLiteStatement = database.compileStatement(sqlString);
+            sqLiteStatement.bindString(1, dbName);
+            sqLiteStatement.bindString(2, dbAge);
+            sqLiteStatement.bindString(3, dbGender);
+            sqLiteStatement.bindString(4, dbHeight);
+            sqLiteStatement.bindString(5, dbWeight);
+            sqLiteStatement.bindBlob(6, byteArray);
+            sqLiteStatement.execute();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        Intent geriDon = new Intent(this, Profil.class);
+        geriDon.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        Toast.makeText(getApplicationContext(), "Veri başarıyla güncellendi!" , Toast.LENGTH_LONG).show();
+        startActivity(geriDon);
+    }
+
+    //----------------------------- dbGuncelle ------------------------------------
 
     public Bitmap makeSmallerImage(Bitmap image, int maximumSize) {
         int width = image.getWidth();
