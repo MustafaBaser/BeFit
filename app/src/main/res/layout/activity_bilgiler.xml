@@ -7,7 +7,7 @@
     android:id="@+id/bilgiler_Layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/background2"
     android:screenOrientation="portrait"
     tools:context=".Bilgiler">
 
@@ -27,7 +27,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:src="@drawable/crossfit"
+                app:srcCompat="@drawable/crossfit"
                 android:scaleType="centerCrop"/>
 
 
@@ -52,6 +52,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorWhiteGrey"
             android:text="@string/Bilgiler3"
             android:textSize="20sp"
             android:lineSpacingExtra="8sp"

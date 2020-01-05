@@ -25,7 +25,7 @@ public class Bilgiler extends AppCompatActivity {
 
     public void nedirbu(View v) {
 
-        Snackbar.make(bilgiler_Layout, "Bu soru fitness için cevabı en çok merak edilen sorudur!", Snackbar.LENGTH_LONG)
+        Snackbar.make(bilgiler_Layout, "Bu sorular, vücut geliştirmede cevabı en çok merak edilen sorulardır!", Snackbar.LENGTH_LONG)
                 .setAction("close", new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

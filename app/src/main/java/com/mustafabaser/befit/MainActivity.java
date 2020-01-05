@@ -5,11 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView textView;
     Button btnShare;
     Intent shareIntent;
     String shareBody = "This is a great app, you should try it out!";
@@ -20,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
+        textView = findViewById(R.id.dbName);
+
 
         String welcomeToast = "BeFit ile daha sağlıklı vücutlar!";
 
-        Toast.makeText(getApplicationContext(), welcomeToast , Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), welcomeToast, Toast.LENGTH_LONG).show();
 
         btnShare = (Button) findViewById(R.id.button4);
 

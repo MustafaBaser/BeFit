@@ -12,8 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".Workout"/>
+        <activity android:name=".OmuzBolgesi"></activity>
+        <activity android:name=".SirtBolgesi" />
+        <activity android:name=".BacakBolgesi" />
+        <activity android:name=".GogusBolgesi" />
+        <activity android:name=".KarinBolgesi" />
+        <activity android:name=".KolBolgesi" />
+        <activity android:name=".Workout" />
         <activity android:name=".ProfiliGuncelle" />
         <activity android:name=".Bilgiler" />
         <activity android:name=".ArkadaslarinaOner" />
