@@ -6,11 +6,6 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/anasayfa"
-            android:icon="@drawable/ic_home"
-            android:title="Ana Sayfa" />
-
-        <item
             android:id="@+id/programlar"
             android:icon="@drawable/ic_play"
             android:title="Programlar" />
@@ -18,13 +13,7 @@
         <item
             android:id="@+id/hakkimda"
             android:icon="@drawable/ic_information"
-            android:title="Hakkımızda" />
-
-        <item
-            android:id="@+id/ayarlar"
-            android:icon="@drawable/ic_tune"
-            android:title="Ayarlar" />
+            android:title="Hakkımda" />
 
     </group>
-
 </menu>

@@ -29,6 +29,8 @@ public class Profil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         listView = findViewById(R.id.listView);
         nameArray = new ArrayList<>();
         idArray = new ArrayList<>();

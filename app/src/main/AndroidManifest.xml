@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OmuzBolgesi"></activity>
+        <activity android:name=".Bildirim"></activity>
+        <activity android:name=".OmuzBolgesi" />
         <activity android:name=".SirtBolgesi" />
         <activity android:name=".BacakBolgesi" />
         <activity android:name=".GogusBolgesi" />
@@ -29,6 +30,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Profil"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/Ayarlar" />
         <activity
             android:name=".SplashActivity"

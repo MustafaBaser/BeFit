@@ -1,5 +1,6 @@
 package com.mustafabaser.befit;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,9 +11,11 @@ import android.view.View;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.material.navigation.NavigationView;
+import com.mustafabaser.befit.fragments.HakkimdaFragment;
 import com.mustafabaser.befit.fragments.WorkoutFragment1;
 
-public class Hakkimda extends AppCompatActivity {
+public class Hakkimda extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
 
     @Override
@@ -20,7 +23,18 @@ public class Hakkimda extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hakkimda);
 
+    }
 
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+
+        switch (menuItem.getItemId()){
+            case R.id.programlar_1:
+                getSupportFragmentManager().beginTransaction().replace(R.id.programlar_1,
+                        new HakkimdaFragment()).commit();
+                break;
+        }
+        return true;
     }
 
     @Override

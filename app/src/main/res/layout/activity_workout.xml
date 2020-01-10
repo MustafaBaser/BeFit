@@ -112,6 +112,7 @@
         android:id="@+id/kasBeFit"
         android:layout_width="161dp"
         android:layout_height="158dp"
+        android:onClick="bildirimGonder"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"

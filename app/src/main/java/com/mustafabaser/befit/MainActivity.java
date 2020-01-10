@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     TextView textView;
     Button btnShare;
     Intent shareIntent;
-    String shareBody = "This is a great app, you should try it out!";
+    String shareBody = "BeFit ile daha sağlıklı vücutlar! Tavsiye ederim!";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
