@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     public void antrenman(View view) {
